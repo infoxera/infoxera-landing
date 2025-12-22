@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Infoxera</title>
+  <meta name="description" content="Privacy Policy for Infoxera." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Infoxera logo">
+      <span class="name">Infoxera</span>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="privacy-policy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: <span id="updated"></span></p>
+
+  <h2>Overview</h2>
+  <p>
+    Infoxera respects privacy and is committed to protecting personal information.
+    This Privacy Policy explains how we handle data collected through our website.
+  </p>
+
+  <h2>Information we collect</h2>
+  <ul class="list">
+    <li><span class="hl">Contact information</span> you send us via email (e.g., name, email address, message content).</li>
+    <li><span class="hl">Basic technical data</span> that may be collected by hosting providers (e.g., logs for security and performance).</li>
+  </ul>
+
+  <h2>How we use information</h2>
+  <ul class="list">
+    <li>To respond to inquiries and provide requested information</li>
+    <li>To improve website reliability and security</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>
+    We do not sell personal information. We may use service providers (e.g., hosting) to operate this website.
+    Those providers may process limited technical data required to deliver the site.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    For privacy questions, contact:
+    <a href="mailto:privacy@infoxera.com"><span class="hl">privacy@infoxera.com</span></a>
+  </p>
+</main>
+
+<footer>
+  <div class="container footer-links">
+    <div class="left">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="muted">© <span id="year"></span> Infoxera. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const d = new Date();
+  document.getElementById("updated").textContent = d.toISOString().slice(0,10);
+</script>
+</body>
+</html>
