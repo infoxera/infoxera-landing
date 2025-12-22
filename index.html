@@ -1,101 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INFOXERA — Coming Soon</title>
-  <meta name="description" content="INFOXERA is building something exciting. Stay tuned." />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #020617);
-      color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding: 24px;
-    }
-
-    header {
-      margin-top: 5vh; /* push header slightly down */
-    }
-
-    .logo {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-    }
-
-    .container {
-      max-width: 720px;
-      width: 100%;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: clamp(28px, 5vw, 48px);
-      font-weight: 700;
-      margin: 24px 0 20px;
-      line-height: 1.2;
-    }
-
-    p {
-      font-size: 16px;
-      opacity: 0.85;
-      margin-bottom: 32px;
-    }
-
-    .contact {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 999px;
-      background: #ffffff;
-      color: #020617;
-      font-weight: 600;
-      text-decoration: none;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .contact:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    }
-
-    footer {
-      margin-top: auto; /* push footer to bottom */
-      font-size: 14px;
-      opacity: 0.6;
-      padding-bottom: 16px;
-    }
-
-    footer a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infoxera — App & Web Development</title>
+  <meta name="description" content="Infoxera builds innovative mobile and web applications for businesses and consumers." />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Infoxera logo">
+      <span class="name">Infoxera</span>
+    </a>
 
-  <header>
-    <div class="logo">INFOXERA</div>
-  </header>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main class="container">
-    <h1>WE’RE BUILDING SOMETHING EXCITING 🚀</h1>
-    <p>Our team is working behind the scenes. Stay tuned for updates.</p>
-    <a class="contact" href="mailto:hey@infoxera.com">Contact Us</a>
-  </main>
+<main class="container">
+  <section class="hero">
+    <h1>We build <span class="hl">innovative</span> App & Web solutions.</h1>
+    <p>
+      Infoxera is a technology company that designs and develops
+      <span class="hl">mobile applications</span> and <span class="hl">web platforms</span>
+      for both businesses and consumers.
+    </p>
+    <p class="muted">
+      Our focus: reliable engineering, modern UX, and scalable systems.
+    </p>
+    <div style="margin-top:14px;">
+      <span class="badge">iOS</span>
+      <span class="badge">Android</span>
+      <span class="badge">Web Apps</span>
+      <span class="badge">UI/UX</span>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 INFOXERA · <a href="mailto:hey@infoxera.com">hey@infoxera.com</a></p>
-  </footer>
+  <div class="grid">
+    <div class="card">
+      <h3><span class="hl">Product-grade</span> development</h3>
+      <p>We ship apps that are stable, secure, and ready for real users.</p>
+    </div>
+    <div class="card">
+      <h3><span class="hl">Business</span> & <span class="hl">Consumer</span> apps</h3>
+      <p>From internal tools to customer-facing apps with delightful UX.</p>
+    </div>
+    <div class="card">
+      <h3>End-to-end delivery</h3>
+      <p>Discovery → design → development → launch → maintenance.</p>
+    </div>
+    <div class="card">
+      <h3>Clear communication</h3>
+      <p>Simple updates, practical timelines, and transparent progress.</p>
+    </div>
+  </div>
 
+  <hr>
+
+  <h2>What we do</h2>
+  <ul class="list">
+    <li><span class="hl">iOS app development</span> (Swift / modern iOS patterns)</li>
+    <li><span class="hl">Web application development</span> (fast, secure, responsive)</li>
+    <li>UI/UX design and product improvements</li>
+    <li>App maintenance, optimization, and support</li>
+  </ul>
+
+  <p class="muted">
+    For Apple Developer Program (Company) verification, you can find our company details on the
+    <a href="about.html"><span class="hl">About</span></a> and
+    <a href="contact.html"><span class="hl">Contact</span></a> pages.
+  </p>
+</main>
+
+<footer>
+  <div class="container footer-links">
+    <div class="left">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="muted">© <span id="year"></span> Infoxera. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
