@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infoxera — Building Our Own Products</title>
+  <meta name="description" content="Infoxera builds and launches innovative mobile and web products." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Favicon (PNG only) -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Infoxera home">
+        <img src="assets/css/img/logo.png" alt="Infoxera logo" class="brand-logo" />
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+        <a class="btn btn-outline" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          Apps Built for
+          <span class="hl">Real Users & Real</span>
+          Growth.
+        </h1>
+
+        <p class="hero-subtitle">
+          Infoxera develops mobile and web products that deliver <span class="hl">seamless experiences</span> for everyday consumers.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Get in touch</a>
+          <span class="hero-note">Based in UAE • Building for global users</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+  <div class="hero-image-wrap">
+    <img
+      src="assets/css/img/hero.png"
+      alt="Infoxera product illustration"
+      class="hero-image"
+    />
+  </div>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>© <span id="year"></span> Infoxera. All rights reserved.</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — Infoxera</title>
+  <meta name="description" content="Contact Infoxera. Get in touch via email or the contact form." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Infoxera home">
+        <img src="assets/css/img/logo.png" alt="Infoxera logo" class="brand-logo" />
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="btn btn-outline" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+ <main class="container">
+
+ <section class="company-intro">
+  <div class="company-card">
+    <h1 class="page-title">Contact Us</h1>
+
+    <p class="page-subtitle">
+      Have questions or want to get in touch regarding our products, partnerships,
+      or general inquiries? We’d love to hear from you.
+    </p>
+    </div>
+</section>
+
+  <div class="company-details">
+      <div class="company-row">
+        <span class="company-label">Company</span>
+        <span class="company-value">Infoxera FZE</span>
+      </div>
+
+      <div class="company-row">
+        <span class="company-label">Address</span>
+        <span class="company-value">
+          Block B, B47-069 SRTIP,<br />
+          Sharjah, United Arab Emirates
+        </span>
+      </div>
+        <div class="company-row">
+        <span class="company-label">Email</span>
+        <span class="company-value">
+          <a href="mailto:hey@infoxera.com">hey@infoxera.com</a>
+        </span>
+      </div>
+  </div>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section">
+    <form id="contactForm" class="contact-modern-form">
+      <div class="field-group">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+      </div>
+
+      <div class="field-group">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="field-group">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Subject of your message" required />
+      </div>
+
+      <div class="field-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button class="btn btn-primary form-submit" type="submit">Send Message</button>
+      <p id="status" class="form-status muted"></p>
+    </form>
+  </section>
+
+</main>
+
+<script>
+const form = document.getElementById("contactForm");
+const statusEl = document.getElementById("status");
+
+function isValidEmail(value){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !subject || !message || !isValidEmail(email)) {
+    statusEl.textContent = "Please fill all fields correctly.";
+    return;
+  }
+
+  const to = "hey@infoxera.com";
+  const body = `
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+
+  const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  statusEl.textContent = "Opening your email app…";
+  window.location.href = mailto;
+});
+</script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>© <span id="year"></span> Infoxera. All rights reserved.</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
